@@ -1,0 +1,148 @@
+.settings_main__container {
+    padding-left: 15px;
+}
+
+.settings_title {
+    padding-bottom: 20px;
+}
+
+.settings_title_text {
+    font-size: 55px;
+    font-weight: 400;
+    color: #e4e2d4;
+}
+
+.setting_main_info_title_text {
+    font-size: 25px;
+    font-weight: 400;
+    color: #e4e2d4;
+}
+
+.settings_main_info_title {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.settings_main_info_edit_button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.settings_main_info_edit_button:active {
+    .settings_main_info_edit_button_text {
+        color: #e4e2d4;
+    }
+    .settings_main_info_edit_button_icon svg * {
+        fill: #e4e2d4;
+    }
+}
+
+.settings_main_info_edit_button:hover {
+    cursor: pointer;
+}
+
+.settings_main_info_edit_button_icon {
+    width: 25px;
+    height: 25px;
+}
+.settings_main_info_edit_button_text {
+    font-weight: 18px;
+    color: #777;
+    font-weight: 500;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none; 
+
+}
+
+.settings_main_info_inputs {
+    display: flex;
+    column-gap: 160px;
+}
+
+.settings_form_error_container {
+    width: 200px;
+    position: absolute;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.settings_info_col {
+    row-gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.settings_info_name_title {
+    font-size: 15px;
+    width: max-content;
+    color: #e4e2d4;
+}
+
+.settings_line {
+    position: relative;
+    height: 1px;
+    width: 1000px;
+    background-color: #e4e2d4;
+    margin-top: 15px;
+    margin-left: -15px;
+    margin-bottom: 15px;
+}
+
+.settings_profile_info_title {
+    display: flex;
+    align-items: center;
+    column-gap: 160px;
+}
+
+.settings_profile_info_inputs {
+    display: flex;
+    column-gap: 240px;
+}
+
+.settings_edititng_mode {
+    display: flex;
+    column-gap: 181px;
+}
+
+.settings_button_justifier {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.settings_cross_btn {
+    all: unset;
+    height: 20px;
+    cursor: pointer;
+}
+
+.settings_cross_btn .cls-1, .settings_date_picker .cls-1 {
+    fill: #777;
+}
+
+.settings_cross_btn:active {
+    svg .cls-1 {
+        fill: #e4e2d4;
+    }
+}
+
+.date_select.settings_active {
+    .cls-1 {
+        fill: #e4e2d4;
+    }
+}
+
+.cross_settings_svg {   
+    width: 18px;
+    height: 18px; 
+    margin-top: 2px;
+}
+

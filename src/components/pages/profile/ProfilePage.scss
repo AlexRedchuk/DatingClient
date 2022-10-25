@@ -1,0 +1,260 @@
+.profile_container {
+    padding: 20px;
+    width: 1080px;
+    height: 720px;
+    background: #e4e2d4;
+    border-radius: 30px;
+    display: flex;
+}
+
+.profile_main_img_container {
+    width: 64%;
+    height: 100%;
+    
+}
+
+.profile_side_img_container {
+    width: 36%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+.profile_main_img_container:hover {
+    cursor: pointer;
+}
+
+.profile_main_img {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.profile_blured {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+    background: rgba(32, 30, 30, 0.62);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16.8px);
+    -webkit-backdrop-filter: blur(16.8px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile_info {
+    padding-top: 20px;
+    padding-left: 20px;
+    color: #e4e2d4;
+    display: flex;
+    flex-direction: column;
+    
+}
+.profile_name {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+.profile_verified {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.profile_verified {
+    .cls-1 {
+        fill: #ff7819;
+    }
+}
+
+.profile_info_label {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.profile_about_label {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.profile_about_text {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.profile_bottom_photos {
+    height: 115px;
+    width: max-content;
+    display: flex;
+    padding: 5px;
+    column-gap: 5px;
+    
+}
+
+.profile_bottom_img_container {
+    user-select: none;
+    height: 105px;
+    width: 85px;
+    background-color: #777;
+}
+
+.profile_bottom_img_container:hover {
+    cursor: pointer;
+}
+
+.profile_bottom_img {
+    height: 100%;
+    width: 100%;
+}
+
+.profile_carousel_container {
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #777;
+    z-index: 20;
+    position: fixed;
+    background: rgba(33, 30, 30, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+}
+
+.profile_cross_btn {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    svg * {
+        transition: all 0.1s;
+        fill: #777;
+    }
+    
+}
+
+.profile_cross_btn:hover {
+    svg * {
+        fill: #e4e2d4;
+    }
+}
+
+.profile_carousel_photo_container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100%;
+    width: 62%;
+    .profile_carousel_photo {
+        user-select: none;
+        margin-top: 30px;
+        height: 680px;
+        max-width: 900px;
+    }
+}
+
+.profile_carousel_bottom_photos {
+    margin-bottom: 25px;
+    height: 115px;
+    width: max-content;
+    display: flex;
+    align-self: flex-end;
+    justify-self: flex-end;
+    padding: 5px;
+    column-gap: 5px;
+
+}
+
+.carousel_slide_button {
+    height: 60%;
+    width: 50px;
+    background: transparent;
+    position: absolute;
+    display: flex;
+    align-self: center;
+    transition: .4s all;
+    overflow: hidden;
+    
+}
+.carousel_slide_button svg * {
+    fill: #777777 ;
+    
+}
+
+
+.carousel_slide_button:hover {
+    background: rgba(34, 34, 34, 0.6);
+    cursor: pointer;
+
+   
+}
+
+.carousel_slide_button:hover svg *{
+    fill: #e4e2d4 ;
+}
+
+
+.carousel_right {
+    right: 130px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.carousel_left {
+    left: 130px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.carousel_blured {
+    height: 105px;
+    width: 85px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+    color: #e4e2d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile_interaction_button {
+    position: absolute;
+    top: 74px;
+    z-index: 10;
+    right: 35px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: right;
+    padding-right: 5px;
+    svg {
+        height: 40px;
+        width: 40px;
+        pointer-events: none;
+    }
+}
+
+.profile_interaction_button:hover {
+    cursor: pointer;
+}
+
+.profile_interaction_button_blue .cls-1 {
+    fill: #0087e6;
+}

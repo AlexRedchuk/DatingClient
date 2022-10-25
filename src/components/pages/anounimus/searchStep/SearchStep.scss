@@ -1,0 +1,54 @@
+
+.search_step_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    padding-top: 60px;
+}
+
+.search_step_anon_icon {
+    background: #0086e4;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    svg *{
+        stroke: #e4e2d4;
+        fill: #e4e2d4;
+    }
+
+}
+
+.search_step_theme {
+    font-weight: 600;
+    font-size: 18px;
+    color: #777;
+    text-align: center;
+    
+}
+
+.search_step_text {
+    font-weight: 600;
+    font-size: 17px;
+    width: 500px;
+    color: #777;
+    text-align: center;
+}
+
+.search_step_btn {
+    width: 250px;
+    height: 60px;
+    margin-top: 20px;
+    border-radius: 30px;
+    line-height: 60px;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    color: #e4e2d4;
+    background-color: #0086e4;
+}
+
+.search_step_btn:hover {
+    cursor: pointer;
+}

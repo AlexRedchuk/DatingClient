@@ -1,0 +1,73 @@
+.chat_step_container {
+    height: 525px;
+    width: 100%;
+    padding: 15px;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.chat_step_container::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.chat_step_top_info {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.chat_step_theme {
+    font-weight: 600;
+    font-size: 18px;
+    color: #777;
+    text-align: left;
+}
+
+.chat_step_text {
+    font-weight: 600;
+    font-size: 17px;
+    width: 500px;
+    color: #777;
+    text-align: left;
+}
+
+.chat_step_text_container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.chat_step_form_container {
+    padding-bottom: 10px;
+}
+
+.chat_step_message_input {
+    outline: none;
+    padding: 10px;
+    padding-left: 15px;
+    font-size: 18px;
+    width: 960px;
+    border: none;
+    border-radius: 10px;
+    background: #d3b8a6;
+    margin: 10px;
+    font-weight: 500;
+    margin-left: 20px;
+   
+}
+
+.chat_step_send_button {
+    border: none;
+    background: none;
+    transform: translateY(8px);
+    width: 32px;
+    height: 24px;
+    margin-left: -55px;
+    svg * {
+        fill: #0086e4;
+    }
+}
+
+.chat_step_send_button:hover {
+    cursor: pointer;
+}
