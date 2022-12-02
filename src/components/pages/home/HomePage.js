@@ -34,7 +34,7 @@ const HomePage = ({ getSymphaties, getPotentials, symphaties, potentials,
             await getUnreadMessageCount();
             await getConversations();
             
-            const ios = await io("ws://localhost:8900")
+            const ios = await io(process.env.REACT_APP_SOCKET_URL);
             setSocket(ios)
         }
         getSymph();
