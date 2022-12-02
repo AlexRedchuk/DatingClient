@@ -37,6 +37,7 @@ class LoginForm extends Component {
             <form className="auth_form" onSubmit={this.props.handleSubmit(this.onSubmit)}>
                 <Link to="/"><img className="login_logo" src={logo} alt="logo"/> </Link>
                 <span className="enter_words">Введіть дані, щоб увійти або створіть новий аккаунт <Link to="/register" className="orange_words">тут.</Link></span>
+                <span className="enter_words">{this.props.errorMessage}</span>
                 <Field name="email" component={this.renderInput} label="Логін" placeholder="Введіть ваш Email"/>
                 <Field name="password" type="password" component={this.renderInput} label="Пароль" placeholder="Введіть ваш пароль" />
                 {/* <div className="forgot_password">Забули пароль?</div> */}
